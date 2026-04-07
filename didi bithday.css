@@ -1,0 +1,63 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Serif', 'Georgia', serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Star Background Effect */
+#star-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    letter-spacing: 3px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: translateY(-10px);
+}
+
+.hidden { display: none; }

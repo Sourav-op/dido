@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="star-container"></div>
+
+    <section id="landing">
+        <div class="card" onclick="showSection('note-section')">NOTE</div>
+        <div class="card" onclick="showSection('birthday-section')">BIRTHDAY</div>
+    </section>
+
+    <section id="birthday-section" class="content-section hidden">
+        <button class="back-btn" onclick="goBack()">← BACK</button>
+        <div class="message">
+            <h1>HAPPY BIRTHDAY!</h1>
+            <p>Wishing you the most magical year ahead.</p>
+        </div>
+        
+        <div class="cake-container">
+            <img src="your-cake-asset.png" alt="Cake" class="floating-cake">
+        </div>
+
+        <div class="scroll-prompt">SCROLL DOWN</div>
+
+        <div class="memories">
+            <h2>MEMORIES</h2>
+            <div class="gallery">
+                <img src="Screenshot 2026-02-19 210802.jpg" alt="Memory 1">
+                <img src="Screenshot 2026-02-19 210731.jpg" alt="Memory 2">
+                <img src="Screenshot 2026-02-19 210706.jpg" alt="Memory 3">
+                <img src="Screenshot 2026-02-19 210645.jpg" alt="Memory 4">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
